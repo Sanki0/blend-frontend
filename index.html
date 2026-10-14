@@ -58,15 +58,15 @@
     <div class="relative overflow-hidden bg-white">
       <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-20 sm:pt-20 sm:pb-28 text-center">
         <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-indigo-100 text-indigo-700">
-          For brands with big ideas and small budgets
+          Where brands meet human &amp; AI creators
         </span>
         <h1 class="mt-6 text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
           <span class="block">Go viral with AI.</span>
           <span class="block text-indigo-600">Grow loyal with real creators.</span>
         </h1>
         <p class="mt-5 max-w-2xl mx-auto text-lg text-gray-500 sm:text-xl">
-          Blend is where brands meet human &amp; AI creators. Start fast and cheap with AI avatars to find
-          what resonates, then double down with authentic human creators to build real trust.
+          Launch at the speed of AI avatars to find what resonates, then double down with authentic human
+          creators to build real trust. One platform for the full creator journey.
         </p>
         <div class="mt-8 flex flex-col sm:flex-row sm:justify-center gap-3">
           <a href="https://calendar.app.google/dJRzKsXhBFdCgbzZ6" target="_blank" rel="noopener"
@@ -86,68 +86,129 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
           <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Features</h2>
-          <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight">Choose your UGC strategy
-          </p>
-          <p class="max-w-xl mt-5 mx-auto text-xl text-gray-500">Blend offers flexible options for your content creation
-            needs</p>
+          <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight">Built for both sides</p>
+          <p class="max-w-xl mt-5 mx-auto text-xl text-gray-500">Whether you run the brand or make the content,
+            Blend has a side for you.</p>
         </div>
-        <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
-          <!-- Human Creators -->
+
+        <!-- Toggle -->
+        <div class="mt-8 flex justify-center">
+          <div class="inline-flex rounded-lg bg-gray-200 p-1" role="tablist">
+            <button id="tab-company" type="button" onclick="showAudience('company')"
+              class="px-5 py-2 text-sm font-medium rounded-md bg-white text-indigo-700 shadow">
+              For companies
+            </button>
+            <button id="tab-creator" type="button" onclick="showAudience('creator')"
+              class="px-5 py-2 text-sm font-medium rounded-md text-gray-600 hover:text-gray-900">
+              For creators
+            </button>
+          </div>
+        </div>
+
+        <!-- Company features -->
+        <div id="features-company" class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
           <div class="pt-6">
-            <div class="flow-root bg-white rounded-lg px-6 pb-8 shadow-lg">
+            <div class="flow-root bg-white rounded-lg px-6 pb-8 shadow-lg h-full">
               <div class="-mt-6">
-                <div>
-                  <span class="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                      <circle cx="9" cy="7" r="4" />
-                      <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                      <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                    </svg>
-                  </span>
-                </div>
-                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Human Creators (Fidelity)</h3>
-                <p class="mt-5 text-base text-gray-500">Browse a curated marketplace of real creators filtered by niche,
-                  audience, and style.</p>
+                <span class="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 8V4H8" />
+                    <rect width="16" height="12" x="4" y="8" rx="2" />
+                    <path d="M2 14h2" />
+                    <path d="M20 14h2" />
+                    <path d="M15 13v2" />
+                    <path d="M9 13v2" />
+                  </svg>
+                </span>
+                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">AI Avatars (Virality)</h3>
+                <p class="mt-5 text-base text-gray-500">Generate content with realistic AI avatars that speak, act,
+                  and perform scripted videos in any language.</p>
                 <ul class="mt-5 space-y-3">
-                  <li class="flex items-center"><span class="h-5 w-5 text-green-400 mr-2">✔</span><span
-                      class="text-gray-600">Authentic testimonials</span></li>
-                  <li class="flex items-center"><span class="h-5 w-5 text-green-400 mr-2">✔</span><span
-                      class="text-gray-600">Real audience connection</span></li>
-                  <li class="flex items-center"><span class="h-5 w-5 text-green-400 mr-2">✔</span><span
-                      class="text-gray-600">Organic style content</span></li>
+                  <li class="flex items-center"><span class="text-green-400 mr-2">✔</span><span
+                      class="text-gray-600">Instant scaling</span></li>
+                  <li class="flex items-center"><span class="text-green-400 mr-2">✔</span><span
+                      class="text-gray-600">Multilingual support</span></li>
+                  <li class="flex items-center"><span class="text-green-400 mr-2">✔</span><span
+                      class="text-gray-600">A/B testing ready</span></li>
                 </ul>
               </div>
             </div>
           </div>
-          <!-- AI Avatars -->
           <div class="pt-6">
-            <div class="flow-root bg-white rounded-lg px-6 pb-8 shadow-lg">
+            <div class="flow-root bg-white rounded-lg px-6 pb-8 shadow-lg h-full">
               <div class="-mt-6">
-                <div>
-                  <span class="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M12 8V4H8" />
-                      <rect width="16" height="12" x="4" y="8" rx="2" />
-                      <path d="M2 14h2" />
-                      <path d="M20 14h2" />
-                      <path d="M15 13v2" />
-                      <path d="M9 13v2" />
-                    </svg>
-                  </span>
-                </div>
-                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">AI Avatars (Virality)</h3>
-                <p class="mt-5 text-base text-gray-500">Generate content with realistic AI avatars that can speak, act,
-                  or perform scripted videos.</p>
+                <span class="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                  </svg>
+                </span>
+                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Human Creators (Fidelity)</h3>
+                <p class="mt-5 text-base text-gray-500">Browse a curated marketplace of real creators filtered by
+                  niche, audience, and style, then manage briefs and approvals in one place.</p>
                 <ul class="mt-5 space-y-3">
-                  <li class="flex items-center"><span class="h-5 w-5 text-green-400 mr-2">✔</span><span
-                      class="text-gray-600">Instant scaling</span></li>
-                  <li class="flex items-center"><span class="h-5 w-5 text-green-400 mr-2">✔</span><span
-                      class="text-gray-600">Multilingual support</span></li>
-                  <li class="flex items-center"><span class="h-5 w-5 text-green-400 mr-2">✔</span><span
-                      class="text-gray-600">A/B testing ready</span></li>
+                  <li class="flex items-center"><span class="text-green-400 mr-2">✔</span><span
+                      class="text-gray-600">Smart creator matching</span></li>
+                  <li class="flex items-center"><span class="text-green-400 mr-2">✔</span><span
+                      class="text-gray-600">Content review &amp; approvals</span></li>
+                  <li class="flex items-center"><span class="text-green-400 mr-2">✔</span><span
+                      class="text-gray-600">Performance analytics</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Creator features -->
+        <div id="features-creator" class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 hidden">
+          <div class="pt-6">
+            <div class="flow-root bg-white rounded-lg px-6 pb-8 shadow-lg h-full">
+              <div class="-mt-6">
+                <span class="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.3-4.3" />
+                  </svg>
+                </span>
+                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Find campaigns that fit</h3>
+                <p class="mt-5 text-base text-gray-500">No more cold DMs or hunting for brand deals. Blend matches
+                  you with campaigns that fit your niche, audience, and style.</p>
+                <ul class="mt-5 space-y-3">
+                  <li class="flex items-center"><span class="text-green-400 mr-2">✔</span><span
+                      class="text-gray-600">Matched to your niche</span></li>
+                  <li class="flex items-center"><span class="text-green-400 mr-2">✔</span><span
+                      class="text-gray-600">Fair, suggested pricing per video</span></li>
+                  <li class="flex items-center"><span class="text-green-400 mr-2">✔</span><span
+                      class="text-gray-600">Payouts &amp; taxes handled</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="pt-6">
+            <div class="flow-root bg-white rounded-lg px-6 pb-8 shadow-lg h-full">
+              <div class="-mt-6">
+                <span class="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" x2="12" y1="2" y2="22" />
+                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                  </svg>
+                </span>
+                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Earn royalties on your likeness</h3>
+                <p class="mt-5 text-base text-gray-500">License your image to power AI avatars and earn royalties
+                  every time it's used, all under clear licensing contracts you control.</p>
+                <ul class="mt-5 space-y-3">
+                  <li class="flex items-center"><span class="text-green-400 mr-2">✔</span><span
+                      class="text-gray-600">Passive royalty income</span></li>
+                  <li class="flex items-center"><span class="text-green-400 mr-2">✔</span><span
+                      class="text-gray-600">Transparent licensing contracts</span></li>
+                  <li class="flex items-center"><span class="text-green-400 mr-2">✔</span><span
+                      class="text-gray-600">You stay in control of usage</span></li>
                 </ul>
               </div>
             </div>
@@ -158,87 +219,147 @@
 
     <!-- Story -->
     <section id="story" class="py-20 bg-white">
-      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
           <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">The Blend journey</h2>
           <p class="mt-1 text-3xl font-extrabold text-gray-900 sm:text-4xl sm:tracking-tight">
-            From unknown to unmissable
+            Two sides, one journey
           </p>
-          <p class="mt-4 text-lg text-gray-500">
-            You're a small team with a great product and a tiny marketing budget. Here's how brands use Blend
-            to punch way above their weight.
+          <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-500">
+            Blend works for the brand behind the campaign and the creator in front of the camera.
+            Here's what the journey looks like for each.
           </p>
         </div>
 
-        <!-- Steps -->
-        <div class="mt-14 space-y-10">
-          <!-- Step 1 -->
-          <div class="flex gap-5">
-            <div class="flex-shrink-0 flex flex-col items-center">
-              <div class="h-11 w-11 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold">1
-              </div>
-              <div class="w-px flex-1 bg-indigo-100 mt-2"></div>
+        <div class="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+
+          <!-- Company journey -->
+          <div>
+            <div class="flex items-center mb-8">
+              <span
+                class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-indigo-100 text-indigo-700">For
+                companies</span>
             </div>
-            <div class="pb-2">
-              <h3 class="text-xl font-bold text-gray-900">Start viral, not expensive</h3>
-              <p class="mt-2 text-gray-600">
-                You can't afford a dozen creator contracts to find out what works. So you spin up AI avatars
-                in Blend and launch a wave of short, scripted videos in minutes, in every language your market
-                speaks, for a fraction of the cost.
-              </p>
+            <div class="space-y-8">
+              <div class="flex gap-5">
+                <div class="flex-shrink-0 flex flex-col items-center">
+                  <div
+                    class="h-10 w-10 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold">1
+                  </div>
+                  <div class="w-px flex-1 bg-indigo-100 mt-2"></div>
+                </div>
+                <div class="pb-1">
+                  <h3 class="text-lg font-bold text-gray-900">Launch fast with AI</h3>
+                  <p class="mt-2 text-gray-600">You have a great product but no time to wait. Spin up AI avatars and
+                    launch short, scripted videos in minutes, in every language your market speaks.</p>
+                </div>
+              </div>
+              <div class="flex gap-5">
+                <div class="flex-shrink-0 flex flex-col items-center">
+                  <div
+                    class="h-10 w-10 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold">2
+                  </div>
+                  <div class="w-px flex-1 bg-indigo-100 mt-2"></div>
+                </div>
+                <div class="pb-1">
+                  <h3 class="text-lg font-bold text-gray-900">Learn what resonates</h3>
+                  <p class="mt-2 text-gray-600">A/B test hooks, angles, and offers at scale. Analytics show which
+                    message makes people stop scrolling, so you stop guessing and double down on what converts.</p>
+                </div>
+              </div>
+              <div class="flex gap-5">
+                <div class="flex-shrink-0 flex flex-col items-center">
+                  <div
+                    class="h-10 w-10 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold">3
+                  </div>
+                  <div class="w-px flex-1 bg-indigo-100 mt-2"></div>
+                </div>
+                <div class="pb-1">
+                  <h3 class="text-lg font-bold text-gray-900">Turn virality into loyalty</h3>
+                  <p class="mt-2 text-gray-600">With a winning message in hand, bring in real human creators who fit
+                    your niche. Their authentic voice turns a spark of attention into a community that trusts you.</p>
+                </div>
+              </div>
+              <div class="flex gap-5">
+                <div class="flex-shrink-0 flex flex-col items-center">
+                  <div
+                    class="h-10 w-10 rounded-full bg-green-500 text-white flex items-center justify-center font-bold">★
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-gray-900">Grow on your own terms</h3>
+                  <p class="mt-2 text-gray-600">AI for reach, humans for trust, all from one platform. You scale like
+                    a big brand, your way.</p>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Step 2 -->
-          <div class="flex gap-5">
-            <div class="flex-shrink-0 flex flex-col items-center">
-              <div class="h-11 w-11 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold">2
-              </div>
-              <div class="w-px flex-1 bg-indigo-100 mt-2"></div>
+          <!-- Creator journey -->
+          <div>
+            <div class="flex items-center mb-8">
+              <span
+                class="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-green-100 text-green-700">For
+                creators</span>
             </div>
-            <div class="pb-2">
-              <h3 class="text-xl font-bold text-gray-900">Learn what actually resonates</h3>
-              <p class="mt-2 text-gray-600">
-                A/B test hooks, angles, and offers at scale. Blend's analytics show you which message makes
-                people stop scrolling, so you stop guessing and start doubling down on what converts.
-              </p>
+            <div class="space-y-8">
+              <div class="flex gap-5">
+                <div class="flex-shrink-0 flex flex-col items-center">
+                  <div
+                    class="h-10 w-10 rounded-full bg-green-500 text-white flex items-center justify-center font-bold">1
+                  </div>
+                  <div class="w-px flex-1 bg-green-100 mt-2"></div>
+                </div>
+                <div class="pb-1">
+                  <h3 class="text-lg font-bold text-gray-900">Stop hunting for campaigns</h3>
+                  <p class="mt-2 text-gray-600">Finding brand deals is hard and the cold outreach never ends. Blend
+                    matches you with campaigns that actually fit your niche, audience, and style.</p>
+                </div>
+              </div>
+              <div class="flex gap-5">
+                <div class="flex-shrink-0 flex flex-col items-center">
+                  <div
+                    class="h-10 w-10 rounded-full bg-green-500 text-white flex items-center justify-center font-bold">2
+                  </div>
+                  <div class="w-px flex-1 bg-green-100 mt-2"></div>
+                </div>
+                <div class="pb-1">
+                  <h3 class="text-lg font-bold text-gray-900">Never guess your rate again</h3>
+                  <p class="mt-2 text-gray-600">Not sure what to charge per video? Blend suggests fair pricing based on
+                    real market data, and handles payouts and taxes so you get paid without the headache.</p>
+                </div>
+              </div>
+              <div class="flex gap-5">
+                <div class="flex-shrink-0 flex flex-col items-center">
+                  <div
+                    class="h-10 w-10 rounded-full bg-green-500 text-white flex items-center justify-center font-bold">3
+                  </div>
+                  <div class="w-px flex-1 bg-green-100 mt-2"></div>
+                </div>
+                <div class="pb-1">
+                  <h3 class="text-lg font-bold text-gray-900">Earn royalties on your likeness</h3>
+                  <p class="mt-2 text-gray-600">License your image to power AI avatars and earn royalties every time
+                    it's used, under clear licensing contracts that keep you in control of how and where it appears.</p>
+                </div>
+              </div>
+              <div class="flex gap-5">
+                <div class="flex-shrink-0 flex flex-col items-center">
+                  <div
+                    class="h-10 w-10 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold">★
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-gray-900">Build income that scales</h3>
+                  <p class="mt-2 text-gray-600">Active work from campaigns plus passive royalties from your avatar.
+                    Your face keeps earning even when you're off the clock.</p>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Step 3 -->
-          <div class="flex gap-5">
-            <div class="flex-shrink-0 flex flex-col items-center">
-              <div class="h-11 w-11 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold">3
-              </div>
-              <div class="w-px flex-1 bg-indigo-100 mt-2"></div>
-            </div>
-            <div class="pb-2">
-              <h3 class="text-xl font-bold text-gray-900">Turn virality into loyalty</h3>
-              <p class="mt-2 text-gray-600">
-                Once you know your winning message, you bring in real human creators who already fit your
-                niche. Their authentic voice turns the audience you sparked with AI into a community that
-                actually trusts you and keeps coming back.
-              </p>
-            </div>
-          </div>
-
-          <!-- Step 4 -->
-          <div class="flex gap-5">
-            <div class="flex-shrink-0 flex flex-col items-center">
-              <div class="h-11 w-11 rounded-full bg-green-500 text-white flex items-center justify-center font-bold">★
-              </div>
-            </div>
-            <div>
-              <h3 class="text-xl font-bold text-gray-900">Grow on your own terms</h3>
-              <p class="mt-2 text-gray-600">
-                AI for reach, humans for trust, all from one platform and one budget. You scaled like a big
-                brand without ever spending like one.
-              </p>
-            </div>
-          </div>
         </div>
 
-        <div class="mt-14 text-center">
+        <div class="mt-16 text-center">
           <a href="https://calendar.app.google/dJRzKsXhBFdCgbzZ6" target="_blank" rel="noopener"
             class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
             Start your journey
@@ -437,6 +558,23 @@
     </footer>
 
   </div>
+
+  <script>
+    // Toggle between company and creator feature sets.
+    function showAudience(which) {
+      var company = document.getElementById('features-company');
+      var creator = document.getElementById('features-creator');
+      var tabCompany = document.getElementById('tab-company');
+      var tabCreator = document.getElementById('tab-creator');
+      var active = 'bg-white text-indigo-700 shadow';
+      var inactive = 'text-gray-600 hover:text-gray-900';
+      var isCompany = which === 'company';
+      company.classList.toggle('hidden', !isCompany);
+      creator.classList.toggle('hidden', isCompany);
+      tabCompany.className = 'px-5 py-2 text-sm font-medium rounded-md ' + (isCompany ? active : inactive);
+      tabCreator.className = 'px-5 py-2 text-sm font-medium rounded-md ' + (isCompany ? inactive : active);
+    }
+  </script>
 </body>
 
 </html>
